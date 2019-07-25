@@ -8,7 +8,8 @@ import PokemonDetail from './pokemon/pokemon_detail';
 const Root = ({store}) => (
   <Provider store={store}>
     <HashRouter>
-      {/* <Route path="/pokemon/:pokemonId" component={PokemonDetail}/> */}
+      <Route path="/pokemon/:pokemonId" component={PokemonDetail}/>
+      {/* <Route path="/pokemon/:pokemonId/item/:itemId" exact component={PokemonDetail} /> */}
       <Route path="/" component={PokemonIndex} />
     </HashRouter>
   </Provider>

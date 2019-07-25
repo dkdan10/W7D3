@@ -9,8 +9,12 @@ export const fetchOnePokemon = (id) => {
   return $.ajax({
     method: "GET",
     url: `api/pokemon/${id}`,
-    data: {
-      id
-    }
+  })
+}
+
+export const fetchAllItems = () => {
+  return $.ajax ({
+    method: "GET",
+    url: "api/items"
   })
 }

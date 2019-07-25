@@ -22,7 +22,7 @@ export default class PokemonIndex extends React.Component {
     //   </li>
     // ))
     return (
-      <ul>
+      <ul className="pokemonindex">
         {pokemonItems}
       </ul>
     )
